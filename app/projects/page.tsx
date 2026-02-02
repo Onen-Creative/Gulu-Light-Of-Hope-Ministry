@@ -16,30 +16,33 @@ export default function Projects() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770043335394_hily57"
             alt="Ministry Projects"
             width={1920}
-            height={400}
+            height={500}
             className="w-full h-full object-cover brightness-50"
+            priority={true}
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Ministry Projects
-          </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            The Ministry adopts a holistic approach to Christian service,
-            addressing spiritual, emotional, physical, and social needs.
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-6 rounded-lg max-w-3xl mx-auto mt-8">
-            <p className="text-lg italic mb-2">
-              "Beloved, I pray that you may prosper in all things and be in
-              health…"
+        <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 drop-shadow-lg leading-tight">
+              Ministry Projects
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-4 sm:mb-6">
+              The Ministry adopts a holistic approach to Christian service,
+              addressing spiritual, emotional, physical, and social needs.
             </p>
-            <p className="text-gray-200 font-semibold">3 John 1:2 (NKJV)</p>
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-3 sm:p-4 md:p-6 rounded-lg max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg italic mb-2">
+                "Beloved, I pray that you may prosper in all things and be in
+                health…"
+              </p>
+              <p className="text-gray-200 font-semibold text-xs sm:text-sm md:text-base">3 John 1:2 (NKJV)</p>
+            </div>
           </div>
         </div>
       </section>
@@ -76,30 +79,31 @@ export default function Projects() {
 
           {/* Church Ministry & Branches */}
           <div className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-              <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+              <div className="relative h-[250px] sm:h-[300px] lg:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <CloudinaryImage
                   src="FB_IMG_1770034070592_zrgpyk"
                   alt="Church Ministry"
                   width={800}
                   height={600}
                   className="w-full h-full object-cover"
+                  priority={true}
                 />
               </div>
-              <div>
-                <div className="flex items-center mb-6">
-                  <Church className="h-12 w-12 text-primary-600 mr-4" />
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+              <div className="px-4 lg:px-0">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                  <Church className="h-8 w-8 sm:h-12 sm:w-12 text-primary-600 mr-0 sm:mr-4 mb-2 sm:mb-0" />
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
                     Church Ministry & Branches
                   </h3>
                 </div>
-                <p className="text-xl text-gray-800 mb-6 leading-relaxed">
+                <p className="text-lg sm:text-xl text-gray-800 mb-4 sm:mb-6 leading-relaxed">
                   Church ministry is the spiritual foundation of GULOHBCOM,
                   dedicated to worship, teaching, discipleship, evangelism, and
                   pastoral care in accordance with Holy Scripture.
                 </p>
-                <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-lg">
-                  <p className="text-lg italic mb-2 text-gray-800">
+                <div className="bg-primary-50 border-l-4 border-primary-600 p-4 sm:p-6 rounded-lg">
+                  <p className="text-base sm:text-lg italic mb-2 text-gray-800">
                     "And He Himself gave some to be pastors and teachers…"
                   </p>
                   <p className="text-sm text-gray-600 font-semibold">
@@ -170,27 +174,27 @@ export default function Projects() {
                   </ul>
                 </div>
 
-                <div className="bg-white border-2 border-primary-200 p-6 rounded-xl mt-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <div className="bg-white border-2 border-primary-200 p-4 sm:p-6 rounded-xl mt-6">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">
                       <CloudinaryImage
                         src="FB_IMG_1770033148665_v4dnfk"
                         alt="Pawel Branch Pastor"
-                        width={64}
-                        height={64}
-                        className="object-cover"
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
                       />
                     </div>
-                    <div>
-                      <h6 className="font-bold text-gray-900 text-lg">
+                    <div className="text-center sm:text-left">
+                      <h6 className="font-bold text-gray-900 text-base sm:text-lg">
                         Pastor [Name]
                       </h6>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-xs sm:text-sm text-gray-600">
                         Branch Pastor - Pawel Branch
                       </p>
                     </div>
                   </div>
-                  <p className="text-gray-800 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-800 leading-relaxed text-center sm:text-left">
                     The Pawel Branch exists to nurture believers through
                     faithful preaching of the Word of God, prayer, discipleship,
                     and fellowship. In alignment with the Ministry Constitution,

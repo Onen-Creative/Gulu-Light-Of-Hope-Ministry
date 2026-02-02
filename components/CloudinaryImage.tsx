@@ -9,6 +9,7 @@ interface CloudinaryImageProps {
   height: number;
   className?: string;
   fill?: boolean;
+  priority?: boolean;
 }
 
 export default function CloudinaryImage({
@@ -18,6 +19,7 @@ export default function CloudinaryImage({
   height,
   className = '',
   fill = false,
+  priority = false,
 }: CloudinaryImageProps) {
   return (
     <CldImage
@@ -30,7 +32,9 @@ export default function CloudinaryImage({
       crop="fill"
       gravity="auto"
       quality="auto"
-      format="auto"
+      priority={priority}
+      loading={priority ? "eager" : "lazy"}
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   );
 }

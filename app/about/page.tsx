@@ -5,25 +5,28 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770032905674_qmjwer"
             alt="About Us"
             width={1920}
-            height={400}
+            height={500}
             className="w-full h-full object-cover brightness-50"
+            priority={true}
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            About GULOHBCOM
-          </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            Gulu Light of Hope Bible Church & Outreach Ministries is established
-            to govern the affairs, spiritual mandate, and operations of the
-            Ministry, inspired by the Holy Scriptures.
-          </p>
+        <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
+              About GULOHBCOM
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
+              Gulu Light of Hope Bible Church & Outreach Ministries is established
+              to govern the affairs, spiritual mandate, and operations of the
+              Ministry, inspired by the Holy Scriptures.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -92,21 +92,23 @@ export default function Media() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center bg-gradient-to-br from-primary-600 to-primary-800">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center bg-gradient-to-br from-primary-600 to-primary-800">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Media Gallery
-          </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            Explore photos and videos from our ministry activities, worship
-            services, community outreach programs, and special events.
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-6 rounded-lg max-w-3xl mx-auto mt-8">
-            <p className="text-lg italic mb-2">
-              "Let everything that has breath praise the LORD."
+        <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
+              Media Gallery
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-4 sm:mb-6">
+              Explore photos and videos from our ministry activities, worship
+              services, community outreach programs, and special events.
             </p>
-            <p className="text-gray-200 font-semibold">Psalm 150:6 (NKJV)</p>
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-3 sm:p-4 md:p-6 rounded-lg max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg italic mb-2">
+                "Let everything that has breath praise the LORD."
+              </p>
+              <p className="text-gray-200 font-semibold text-xs sm:text-sm md:text-base">Psalm 150:6 (NKJV)</p>
+            </div>
           </div>
         </div>
       </section>

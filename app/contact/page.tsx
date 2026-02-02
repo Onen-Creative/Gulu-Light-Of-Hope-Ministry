@@ -24,16 +24,16 @@ export default function Contact() {
     };
 
     try {
-      console.log('Submitting form data:', data)
+      console.log("Submitting form data:", data);
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
 
-      console.log('Response status:', response.status)
-      const result = await response.json()
-      console.log('Response data:', result)
+      console.log("Response status:", response.status);
+      const result = await response.json();
+      console.log("Response data:", result);
 
       if (response.ok && result.success) {
         setSubmitMessage("Thank you! Your message has been sent successfully.");
@@ -44,7 +44,7 @@ export default function Contact() {
         );
       }
     } catch (error) {
-      console.error('Form submission error:', error)
+      console.error("Form submission error:", error);
       setSubmitMessage(
         "Sorry, there was an error sending your message. Please try again.",
       );
@@ -55,31 +55,34 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770032975490_vicd6p"
             alt="Contact Us"
             width={1920}
-            height={400}
+            height={500}
             className="w-full h-full object-cover brightness-50"
+            priority={true}
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Contact Us
-          </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            We'd love to hear from you. Get in touch with Gulu Light of Hope
-            Bible Church & Outreach Ministries.
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-6 rounded-lg max-w-3xl mx-auto mt-8">
-            <p className="text-lg italic mb-2">
-              "Let all things be done decently and in order."
+        <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
+              Contact Us
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-4 sm:mb-6">
+              We'd love to hear from you. Get in touch with Gulu Light of Hope
+              Bible Church & Outreach Ministries.
             </p>
-            <p className="text-gray-200 font-semibold">
-              1 Corinthians 14:40 (NKJV)
-            </p>
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-3 sm:p-4 md:p-6 rounded-lg max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg italic mb-2">
+                "Let all things be done decently and in order."
+              </p>
+              <p className="text-gray-200 font-semibold text-xs sm:text-sm md:text-base">
+                1 Corinthians 14:40 (NKJV)
+              </p>
+            </div>
           </div>
         </div>
       </section>
