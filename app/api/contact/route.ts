@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter (you'll need to set up Gmail app password)
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.GMAIL_USER, // Your Gmail address
