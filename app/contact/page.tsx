@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, Church } from "lucide-react";
 import CloudinaryImage from "../../components/CloudinaryImage";
+import { FadeIn } from "../../components/Animations";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,7 +56,7 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center pt-16">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770032975490_vicd6p"
@@ -87,7 +88,8 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <FadeIn>
+        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Information */}
@@ -98,7 +100,7 @@ export default function Contact() {
 
               <div className="space-y-8">
                 {/* Address */}
-                <div className="flex items-start space-x-6 bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-lg">
+                <div className="flex items-start space-x-6 bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
                   <div className="bg-primary-100 p-4 rounded-xl">
                     <MapPin className="h-8 w-8 text-primary-600" />
                   </div>
@@ -117,7 +119,7 @@ export default function Contact() {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start space-x-6 bg-gradient-to-br from-secondary-50 to-white p-6 rounded-2xl shadow-lg">
+                <div className="flex items-start space-x-6 bg-gradient-to-br from-secondary-50 to-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
                   <div className="bg-secondary-100 p-4 rounded-xl">
                     <Phone className="h-8 w-8 text-secondary-600" />
                   </div>
@@ -143,7 +145,7 @@ export default function Contact() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start space-x-6 bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg">
+                <div className="flex items-start space-x-6 bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
                   <div className="bg-green-100 p-4 rounded-xl">
                     <Mail className="h-8 w-8 text-green-600" />
                   </div>
@@ -163,26 +165,32 @@ export default function Contact() {
                 </div>
 
                 {/* Service Times */}
-                <div className="flex items-start space-x-6 bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-lg">
+                <div className="flex items-start space-x-6 bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
                   <div className="bg-primary-100 p-4 rounded-xl">
                     <Clock className="h-8 w-8 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                      Service Times
+                      Weekly Programs
                     </h3>
                     <div className="text-lg text-gray-800 space-y-2">
                       <p>
-                        <strong>Sunday Worship:</strong> 9:00 AM - 12:00 PM
+                        <strong>Morning Devotion:</strong> Mon-Fri, 7:00-8:00 AM
                       </p>
                       <p>
-                        <strong>Bible Study:</strong> Wednesday 6:00 PM
+                        <strong>Online Devotion:</strong> Mon-Fri, 5:00-6:00 PM
                       </p>
                       <p>
-                        <strong>Prayer Meeting:</strong> Friday 6:00 PM
+                        <strong>Midweek Service:</strong> Wednesday Evening
                       </p>
                       <p>
-                        <strong>Youth Fellowship:</strong> Saturday 3:00 PM
+                        <strong>Women's Bible Study:</strong> Thu, 5:00-6:00 PM
+                      </p>
+                      <p>
+                        <strong>Sunday Worship:</strong> Sunday Morning
+                      </p>
+                      <p>
+                        <strong>Cell Fellowship:</strong> Sun, 2:00-4:00 PM
                       </p>
                     </div>
                   </div>
@@ -336,16 +344,18 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* Ministry Branches */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <FadeIn delay={100}>
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
             Our Branches
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
               <div className="flex items-center mb-6">
                 <Church className="h-12 w-12 text-primary-600 mr-4" />
                 <h3 className="text-3xl font-bold text-primary-800">
@@ -356,15 +366,14 @@ export default function Contact() {
                 Headquarters
               </p>
               <p className="text-lg text-gray-800 mb-4 leading-relaxed">
-                Adak Village, Gulu District, Northern Uganda
+                Gulu District, Northern Uganda
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Central worship, administration, and discipleship center of the
-                Ministry
+                The main church and administrative center, hosting worship services, leadership training, discipleship programs, and ministry coordination.
               </p>
             </div>
 
-            <div className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
               <div className="flex items-center mb-6">
                 <Church className="h-12 w-12 text-secondary-600 mr-4" />
                 <h3 className="text-3xl font-bold text-secondary-800">
@@ -375,19 +384,38 @@ export default function Contact() {
                 Extension Ministry
               </p>
               <p className="text-lg text-gray-800 mb-4 leading-relaxed">
-                Arapai Village, Lamogi Sub-county, Amuru District
+                Lamogi Sub-county, Amuru District
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Growing fellowship with 80+ committed believers and weekly
-                services
+                A growing rural fellowship that began as a neighborhood outreach and has developed into a vibrant worshipping community with weekly fellowship meetings and Sunday services.
+              </p>
+            </div>
+
+            <div className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+              <div className="flex items-center mb-6">
+                <Church className="h-12 w-12 text-green-600 mr-4" />
+                <h3 className="text-3xl font-bold text-green-800">
+                  Pabbo Branch
+                </h3>
+              </div>
+              <p className="text-lg font-semibold text-gray-900 mb-2">
+                Extension Ministry
+              </p>
+              <p className="text-lg text-gray-800 mb-4 leading-relaxed">
+                Pabbo Town Council, Amuru District
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                An extension ministry serving believers and the surrounding community through worship services, evangelism, discipleship, and pastoral care.
               </p>
             </div>
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* Visit Us Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <FadeIn delay={200}>
+        <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
@@ -427,6 +455,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      </FadeIn>
     </div>
   );
 }

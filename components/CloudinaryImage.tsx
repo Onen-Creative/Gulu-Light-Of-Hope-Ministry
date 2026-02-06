@@ -32,8 +32,7 @@ export default function CloudinaryImage({
       crop="fill"
       gravity="auto"
       quality="auto"
-      priority={priority}
-      loading={priority ? "eager" : "lazy"}
+      loading="lazy"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   );

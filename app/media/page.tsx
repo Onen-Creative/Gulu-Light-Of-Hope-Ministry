@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Play, X, Camera, Video, Calendar, MapPin } from "lucide-react";
 import CloudinaryImage from "../../components/CloudinaryImage";
+import { FadeIn } from "../../components/Animations";
 
 export default function Media() {
   const [selectedMedia, setSelectedMedia] = useState<any>(null);
@@ -92,7 +93,7 @@ export default function Media() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center bg-gradient-to-br from-primary-600 to-primary-800">
+      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center bg-gradient-to-br from-primary-600 to-primary-800 pt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
@@ -113,6 +114,7 @@ export default function Media() {
         </div>
       </section>
 
+      <FadeIn>
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Filter Tabs */}
@@ -158,7 +160,7 @@ export default function Media() {
             {filteredMedia.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-lg card-shadow overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-200"
+                className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-200"
                 onClick={() => openModal(item)}
               >
                 <div className="relative">
@@ -290,6 +292,7 @@ export default function Media() {
           )}
         </div>
       </div>
+      </FadeIn>
     </div>
   );
 }
