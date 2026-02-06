@@ -92,7 +92,7 @@ export default function Join() {
                 Contact Us <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
-                href="/programs"
+                href="/ministries"
                 className="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all shadow-lg text-lg">
                 View Programs
               </Link>

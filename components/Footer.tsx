@@ -91,17 +91,78 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {["Home", "About", "Ministry", "Projects", "Media", "Partnership", "Join Us", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link
-                    href={`/${item.toLowerCase().replace(" ", "")}`}
-                    className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
-                  >
-                    <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ministries"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Ministry
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/media"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Media
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/partnership"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Partnership
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/join"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Join Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-primary-400 transition-colors flex items-center group"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
