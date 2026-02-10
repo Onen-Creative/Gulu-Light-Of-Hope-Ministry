@@ -9,7 +9,7 @@ export default function About() {
       <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center pt-16">
         <div className="absolute inset-0">
           <CloudinaryImage
-            src="FB_IMG_1770032905674_qmjwer"
+            src="IMG-20260209-WA0008_ghwmf3"
             alt="About Us"
             width={1920}
             height={500}
@@ -35,9 +35,9 @@ export default function About() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[400px] sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
                 <CloudinaryImage
-                  src="FB_IMG_1770034070592_zrgpyk"
+                  src="IMG_20260107_132926_334_ysnf9h"
                   alt="Ministry Community"
                   width={800}
                   height={600}
@@ -50,10 +50,10 @@ export default function About() {
                 </h2>
                 <p className="text-xl text-gray-800 mb-6 leading-relaxed">
                   Gulu Light of Hope Bible Church & Outreach Ministries is a
-                  Christ-centered ministry based in Northern Uganda, committed to
-                  proclaiming the Gospel of Jesus Christ and demonstrating God's
-                  love through worship, discipleship, and holistic community
-                  development.
+                  Christ-centered ministry based in Northern Uganda, committed
+                  to proclaiming the Gospel of Jesus Christ and demonstrating
+                  God's love through worship, discipleship, and holistic
+                  community development.
                 </p>
                 <p className="text-xl text-gray-800 mb-6 leading-relaxed">
                   We are a growing, multi-generational church family passionate
@@ -63,10 +63,10 @@ export default function About() {
                   Christ.
                 </p>
                 <p className="text-xl text-gray-800 leading-relaxed">
-                  Beyond worship services, we actively serve our community through
-                  education, counselling, evangelism, youth and children's
-                  ministries, health and wellness initiatives, agricultural
-                  projects, and outreach to the vulnerable.
+                  Beyond worship services, we actively serve our community
+                  through education, counselling, evangelism, youth and
+                  children's ministries, health and wellness initiatives,
+                  agricultural projects, and outreach to the vulnerable.
                 </p>
               </div>
             </div>
@@ -91,8 +91,9 @@ export default function About() {
                 </div>
                 <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                   To be a beacon of hope and spiritual nourishment, guiding
-                  individuals and communities into a deeper relationship with God
-                  while fostering transformation through faith, love, and service.
+                  individuals and communities into a deeper relationship with
+                  God while fostering transformation through faith, love, and
+                  service.
                 </p>
                 <div className="bg-secondary-50 border-l-4 border-secondary-600 p-4 rounded">
                   <p className="italic text-gray-800 mb-2">
@@ -118,10 +119,10 @@ export default function About() {
                 <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                   To see God clearly, know Him intimately, worship Him
                   authentically, serve Him completely, and love others
-                  unconditionally. Guided by the Bible as our ultimate authority,
-                  we seek transformation through the power of the Holy Spirit,
-                  nurturing personal relationships with God through prayer, His
-                  Word, and Christ-like service.
+                  unconditionally. Guided by the Bible as our ultimate
+                  authority, we seek transformation through the power of the
+                  Holy Spirit, nurturing personal relationships with God through
+                  prayer, His Word, and Christ-like service.
                 </p>
               </div>
 
@@ -131,7 +132,9 @@ export default function About() {
                   <div className="bg-green-100 p-4 rounded-full mr-4">
                     <Award className="h-10 w-10 text-green-600" />
                   </div>
-                  <h3 className="text-3xl font-bold text-green-800">Our Goal</h3>
+                  <h3 className="text-3xl font-bold text-green-800">
+                    Our Goal
+                  </h3>
                 </div>
                 <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                   To cultivate a spiritually vibrant and inclusive church
@@ -161,9 +164,9 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Faith</h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  We firmly trust in the life-transforming power of God, grounded
-                  in His Word, sustained through prayer, and expressed in
-                  wholehearted worship.
+                  We firmly trust in the life-transforming power of God,
+                  grounded in His Word, sustained through prayer, and expressed
+                  in wholehearted worship.
                 </p>
               </div>
 
@@ -171,11 +174,13 @@ export default function About() {
                 <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Target className="h-8 w-8 text-primary-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Passion</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Passion
+                </h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  We serve God with joy and dedication, driven by a deep love for
-                  His Kingdom and a commitment to advancing His work in every
-                  generation.
+                  We serve God with joy and dedication, driven by a deep love
+                  for His Kingdom and a commitment to advancing His work in
+                  every generation.
                 </p>
               </div>
 
@@ -202,8 +207,8 @@ export default function About() {
                 </h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
                   We glorify God through sincere worship that flows from the
-                  heart—expressed in music, prayer, and fellowship that honors His
-                  presence.
+                  heart—expressed in music, prayer, and fellowship that honors
+                  His presence.
                 </p>
               </div>
 
@@ -215,9 +220,109 @@ export default function About() {
                   Compassionate Service
                 </h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  We follow the example of Jesus by serving others with humility,
-                  love, and practical care, bringing hope and healing to those in
-                  need.
+                  We follow the example of Jesus by serving others with
+                  humility, love, and practical care, bringing hope and healing
+                  to those in need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* What We Believe */}
+      <FadeIn delay={300}>
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
+              What We Believe
+            </h2>
+
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  The Bible
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe that the Bible is the verbally inspired word of God
+                  and without mistakes as originally written. It is the complete
+                  revelation of His will for salvation and the only unfailing
+                  rule of faith and practice for the Christian life.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  God
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe in one God, creator of all things, eternally
+                  existing in three persons: Father, Son, and Holy Spirit. We
+                  believe that these three are co-eternal and of equal dignity
+                  and power.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  Jesus
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe in the deity of Jesus Christ who was miraculously
+                  conceived by the Holy Spirit and born of a virgin. He lived a
+                  sinless life and died on the cross as a substitute for our
+                  sins. After His death, He bodily rose from the grave and
+                  ascended to the right hand of the Father. We firmly believe in
+                  His imminent return.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  Humanity
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe that mankind was created by God and for God.
+                  However, through disobedience, every person has experienced
+                  spiritual death, resulting in separation from God. Physical
+                  death is an additional consequence. We also believe that all
+                  individuals are sinners by nature and in their actions.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  Salvation
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe that the Lord Jesus Christ died for our sins and
+                  was raised from the dead to offer us new life. All who believe
+                  in Him are declared righteous because of His sacrificial death
+                  and His life-giving resurrection, and are therefore in a right
+                  relationship with God.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  Holy Spirit
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe in the present ministry of the Holy Spirit
+                  indwelling all believers and thus enabling and empowering the
+                  life and ministry of the believer.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-2xl font-bold text-primary-600 mb-4">
+                  After Life
+                </h3>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  We believe in the bodily resurrection of everyone who has
+                  lived, the everlasting blessedness of those in right
+                  relationship with God, and the everlasting punishment of those
+                  who have rejected God's forgiveness and new life in His Son.
                 </p>
               </div>
             </div>

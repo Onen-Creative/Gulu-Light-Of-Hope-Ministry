@@ -80,10 +80,10 @@ export default function Join() {
 
           <div className="bg-gradient-to-br from-primary-600 to-secondary-600 text-white p-12 rounded-2xl shadow-2xl text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Join Us?
+              Join us in our Mission
             </h3>
             <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              We would love to welcome you to our church family. Contact us today to learn more about our services, programs, and how you can get involved.
+              The Gulu Light of Hope Bible Church community is committed to spreading the light and love of Jesus Christ throughout the Northern Uganda and beyond. We invite you to join us in this mission whether through participation in our outreach programs or by becoming part of our congregation. Discover the vibrant community we have built and the spiritual nourishment we offer by exploring our believes and values.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

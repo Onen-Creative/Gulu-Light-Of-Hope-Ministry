@@ -7,15 +7,14 @@ export default function Partnership() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center pt-16">
+      <section className="relative h-[400px] sm:h-[500px] lg:h-[600px] flex items-center pt-16">
         <div className="absolute inset-0">
           <CloudinaryImage
-            src="FB_IMG_1770033119193_kjrl48"
+            src="IMG-20260209-WA0006_yywtft"
             alt="Partnership"
             width={1920}
-            height={500}
-            className="w-full h-full object-cover brightness-50"
-            priority={true}
+            height={600}
+            className="w-full h-full object-contain sm:object-cover brightness-50"
           />
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
@@ -37,7 +36,7 @@ export default function Partnership() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
                 <CloudinaryImage
-                  src="FB_IMG_1770412527447_zdndgs"
+                  src="IMG-20260209-WA0003_qosdxt"
                   alt="Affiliation"
                   width={800}
                   height={600}
