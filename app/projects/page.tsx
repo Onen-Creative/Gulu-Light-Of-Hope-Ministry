@@ -112,15 +112,15 @@ export default function Projects() {
 
       {/* Projects */}
       <FadeIn delay={100}>
-        <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8 sm:mb-12 md:mb-16">
               Our Projects
             </h2>
-            <div className="space-y-12 sm:space-y-16 md:space-y-20">
+            <div className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
               {/* Church Building Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
                   <CloudinaryImage
                     src="IMG_20260107_170618_426_xk3yrg"
                     alt="Church Building"
@@ -130,15 +130,15 @@ export default function Projects() {
                   />
                 </div>
                 <div>
-                  <div className="flex items-center mb-6">
-                    <div className="bg-primary-100 p-4 rounded-full mr-4">
-                      <Church className="h-10 w-10 text-primary-600" />
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                    <div className="bg-primary-100 p-3 sm:p-4 rounded-full mb-3 sm:mb-0 sm:mr-3 md:mr-4">
+                      <Church className="h-8 w-8 sm:h-10 sm:w-10 text-primary-600" />
                     </div>
-                    <h2 className="text-4xl font-bold text-gray-900">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                       Church Building Project
                     </h2>
                   </div>
-                  <p className="text-xl text-gray-800 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
                     Construction of a permanent, safe, and spacious main church
                     facility to support worship, discipleship, and community
                     ministry.
@@ -147,22 +147,22 @@ export default function Projects() {
               </div>
 
               {/* Education Projects */}
-              <div className="bg-gradient-to-br from-secondary-50 to-white p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
-                <div className="flex items-center mb-8">
-                  <div className="bg-secondary-100 p-4 rounded-full mr-4">
-                    <GraduationCap className="h-12 w-12 text-secondary-600" />
+              <div className="bg-gradient-to-br from-secondary-50 to-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl sm:rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 sm:mb-8">
+                  <div className="bg-secondary-100 p-3 sm:p-4 rounded-full mb-4 sm:mb-0 sm:mr-4">
+                    <GraduationCap className="h-10 w-10 sm:h-12 sm:w-12 text-secondary-600" />
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
                     Education Projects
                   </h2>
                 </div>
 
                 {/* Impact Statement */}
-                <div className="bg-white p-8 rounded-xl shadow-lg mb-8">
-                  <h3 className="text-2xl font-bold text-secondary-600 mb-4">
+                <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-6 sm:mb-8">
+                  <h3 className="text-xl sm:text-2xl font-bold text-secondary-600 mb-3 sm:mb-4">
                     Our Impact on the Community
                   </h3>
-                  <p className="text-lg text-gray-800 leading-relaxed mb-4">
+                  <p className="text-base sm:text-lg text-gray-800 leading-relaxed mb-3 sm:mb-4">
                     Through our education initiatives, we have transformed the
                     lives of over 500 students and their families in Northern
                     Uganda. Our holistic approach combines quality
@@ -170,7 +170,7 @@ export default function Projects() {
                     that vulnerable children have access to learning
                     opportunities that would otherwise be out of reach.
                   </p>
-                  <p className="text-lg text-gray-800 leading-relaxed">
+                  <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
                     Beyond academic excellence, we are building a generation of
                     godly leaders who will impact their communities for Christ.
                     Our beneficiaries are experiencing improved literacy rates,
@@ -180,9 +180,9 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                  <div className="bg-white p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
                       <CloudinaryImage
                         src="FB_IMG_1770033186707_b4al7q"
                         alt="Beacon of Hope Junior School"
@@ -191,17 +191,17 @@ export default function Projects() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                       Beacon of Hope Junior School
                     </h3>
-                    <p className="text-lg text-gray-700 leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       Nursery to Primary Seven, over 500 learners,
                       Christ-centered education in Pawel, Gulu District.
                     </p>
                   </div>
 
-                  <div className="bg-white p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
                       <CloudinaryImage
                         src="FB_IMG_1770033173611_yif6k7"
                         alt="Scholarship Program"
@@ -210,17 +210,17 @@ export default function Projects() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                       Scholarship & Child Sponsorship
                     </h3>
-                    <p className="text-lg text-gray-700 leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       Support for vulnerable children through school fees,
                       supplies, mentorship, and spiritual guidance.
                     </p>
                   </div>
 
-                  <div className="bg-white p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
                       <CloudinaryImage
                         src="FB_IMG_1770410350073_ulis3l"
                         alt="Adult Literacy"
@@ -229,21 +229,21 @@ export default function Projects() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                       Functional Adult Literacy Program
                     </h3>
-                    <p className="text-lg text-gray-700 leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       Reading, writing, numeracy, and life skills for adults.
                     </p>
                   </div>
                 </div>
 
                 {/* Messages from Leadership */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
                   {/* Administrative Director */}
-                  <div className="bg-white p-8 rounded-xl shadow-lg">
-                    <div className="flex items-center mb-6">
-                      <div className="relative w-24 h-24 rounded-full overflow-hidden mr-6 ring-4 ring-secondary-200 flex-shrink-0">
+                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4 sm:mb-6">
+                      <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-4 sm:mb-0 sm:mr-6 ring-4 ring-secondary-200 flex-shrink-0">
                         <CloudinaryImage
                           src="IMG-20260209-WA0024_ezrszx"
                           alt="Administrative Director"
@@ -252,55 +252,57 @@ export default function Projects() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-gray-900">
+                      <div className="text-center sm:text-left">
+                        <h4 className="text-lg sm:text-xl font-bold text-gray-900">
                           Mrs. Beatrice Acan
                         </h4>
-                        <p className="text-secondary-600 font-semibold">
+                        <p className="text-secondary-600 font-semibold text-sm sm:text-base">
                           Administrative Director
                         </p>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-xs sm:text-sm">
                           Beacon of Hope Junior School
                         </p>
                       </div>
                     </div>
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-                      As Administrative Director of Beacon of Hope Junior
-                      School, I am honored to serve in a ministry that
-                      transforms lives through Christ-centered education. Our
-                      school stands as a testament to God's faithfulness and His
-                      heart for the children of Northern Uganda.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed mt-4">
-                      In alignment with our ministry's constitution, we are
-                      committed to providing holistic education that nurtures
-                      the spiritual, academic, physical, and social development
-                      of every child. We believe that true education goes beyond
-                      textbooks—it shapes character, builds faith, and prepares
-                      young hearts to serve God and their communities.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed mt-4">
-                      Our administrative team works diligently to ensure that
-                      Beacon of Hope Junior School operates with excellence,
-                      integrity, and compassion. We maintain high educational
-                      standards while creating an environment where children
-                      experience God's love daily. Through qualified teachers,
-                      proper infrastructure, and a Christ-centered curriculum,
-                      we are building a generation of godly leaders.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed mt-4">
-                      I am deeply grateful to our partners, donors, and
-                      supporters who make this ministry possible. Your
-                      investment in these children's lives creates ripples of
-                      transformation that will impact families and communities
-                      for generations. Together, we are fulfilling the Great
-                      Commission by making disciples and demonstrating God's
-                      love through practical service.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed mt-4 font-semibold">
-                      May God continue to bless this ministry and use it for His
-                      glory.
-                    </p>
+                    <div className="space-y-3 sm:space-y-4">
+                      <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
+                        As Administrative Director of Beacon of Hope Junior
+                        School, I am honored to serve in a ministry that
+                        transforms lives through Christ-centered education. Our
+                        school stands as a testament to God's faithfulness and His
+                        heart for the children of Northern Uganda.
+                      </p>
+                      <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
+                        In alignment with our ministry's constitution, we are
+                        committed to providing holistic education that nurtures
+                        the spiritual, academic, physical, and social development
+                        of every child. We believe that true education goes beyond
+                        textbooks—it shapes character, builds faith, and prepares
+                        young hearts to serve God and their communities.
+                      </p>
+                      <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
+                        Our administrative team works diligently to ensure that
+                        Beacon of Hope Junior School operates with excellence,
+                        integrity, and compassion. We maintain high educational
+                        standards while creating an environment where children
+                        experience God's love daily. Through qualified teachers,
+                        proper infrastructure, and a Christ-centered curriculum,
+                        we are building a generation of godly leaders.
+                      </p>
+                      <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
+                        I am deeply grateful to our partners, donors, and
+                        supporters who make this ministry possible. Your
+                        investment in these children's lives creates ripples of
+                        transformation that will impact families and communities
+                        for generations. Together, we are fulfilling the Great
+                        Commission by making disciples and demonstrating God's
+                        love through practical service.
+                      </p>
+                      <p className="text-sm sm:text-base text-gray-800 leading-relaxed font-semibold">
+                        May God continue to bless this ministry and use it for His
+                        glory.
+                      </p>
+                    </div>
                   </div>
 
                   {/* Head Teacher */}
@@ -373,32 +375,32 @@ export default function Projects() {
               </div>
 
               {/* Agriculture Program */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="flex items-center mb-6">
-                    <div className="bg-green-100 p-4 rounded-full mr-4">
-                      <Sprout className="h-10 w-10 text-green-600" />
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                    <div className="bg-green-100 p-3 sm:p-4 rounded-full mb-3 sm:mb-0 sm:mr-3 md:mr-4">
+                      <Sprout className="h-8 w-8 sm:h-10 sm:w-10 text-green-600" />
                     </div>
-                    <h2 className="text-4xl font-bold text-gray-900">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                       Agriculture Program
                     </h2>
                   </div>
-                  <ul className="space-y-4 text-xl text-gray-800">
+                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 text-base sm:text-lg md:text-xl text-gray-800">
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-3">•</span>
-                      Sustainable farming training
+                      <span className="text-green-600 mr-2 sm:mr-3">•</span>
+                      <span>Sustainable farming training</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-3">•</span>
-                      Demonstration gardens
+                      <span className="text-green-600 mr-2 sm:mr-3">•</span>
+                      <span>Demonstration gardens</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-600 mr-3">•</span>
-                      Food security and income-generating activities
+                      <span className="text-green-600 mr-2 sm:mr-3">•</span>
+                      <span>Food security and income-generating activities</span>
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
                   <CloudinaryImage
                     src="FB_IMG_1770032946503_mggvt8"
                     alt="Agriculture"
@@ -410,8 +412,8 @@ export default function Projects() {
               </div>
 
               {/* Health Center Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
-                <div className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
                   <CloudinaryImage
                     src="FB_IMG_1770042328626_yszo5s"
                     alt="Health Center"
@@ -421,26 +423,26 @@ export default function Projects() {
                   />
                 </div>
                 <div>
-                  <div className="flex items-center mb-4 sm:mb-6">
-                    <div className="bg-red-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
+                    <div className="bg-red-100 p-3 sm:p-4 rounded-full mb-3 sm:mb-0 sm:mr-3 md:mr-4">
                       <Heart className="h-8 w-8 sm:h-10 sm:w-10 text-red-600" />
                     </div>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                       Health Center Project
                     </h2>
                   </div>
-                  <ul className="space-y-3 sm:space-y-4 text-lg sm:text-xl text-gray-800">
+                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 text-base sm:text-lg md:text-xl text-gray-800">
                     <li className="flex items-start">
-                      <span className="text-red-600 mr-3">•</span>
-                      Primary healthcare services
+                      <span className="text-red-600 mr-2 sm:mr-3">•</span>
+                      <span>Primary healthcare services</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-red-600 mr-3">•</span>
-                      Health education and wellness programs
+                      <span className="text-red-600 mr-2 sm:mr-3">•</span>
+                      <span>Health education and wellness programs</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-red-600 mr-3">•</span>
-                      Medical outreach camps
+                      <span className="text-red-600 mr-2 sm:mr-3">•</span>
+                      <span>Medical outreach camps</span>
                     </li>
                   </ul>
                 </div>
@@ -452,55 +454,55 @@ export default function Projects() {
 
       {/* Future Projects */}
       <FadeIn delay={200}>
-        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <div className="flex items-center justify-center mb-4 sm:mb-6">
-                <div className="bg-primary-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4">
-                  <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-primary-600" />
+            <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+              <div className="flex flex-col sm:flex-row items-center justify-center mb-3 sm:mb-4 md:mb-6">
+                <div className="bg-primary-100 p-2 sm:p-3 md:p-4 rounded-full mb-3 sm:mb-0 sm:mr-3 md:mr-4">
+                  <TrendingUp className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-primary-600" />
                 </div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
                   Future Projects
                 </h2>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="bg-white p-8 sm:p-10 md:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
-                <div className="bg-primary-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <TrendingUp className="h-8 w-8 sm:h-10 sm:w-10 text-primary-600" />
+              <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
+                <div className="bg-primary-100 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <TrendingUp className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 text-primary-600" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                   Goat Farming Project
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-800 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
                   Planned income-generating project to support ministry
                   sustainability and community livelihoods.
                 </p>
               </div>
 
-              <div className="bg-white p-8 sm:p-10 md:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
-                <div className="bg-secondary-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <GraduationCap className="h-8 w-8 sm:h-10 sm:w-10 text-secondary-600" />
+              <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
+                <div className="bg-secondary-100 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <GraduationCap className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 text-secondary-600" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                   Secondary School
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-800 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
                   Expansion of educational services to include secondary
                   education, providing quality Christ-centered learning for
                   older students.
                 </p>
               </div>
 
-              <div className="bg-white p-8 sm:p-10 md:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
-                <div className="bg-red-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <Heart className="h-8 w-8 sm:h-10 sm:w-10 text-red-600" />
+              <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl sm:rounded-2xl shadow-xl text-center hover:shadow-2xl hover:scale-105 transition-all">
+                <div className="bg-red-100 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <Heart className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 text-red-600" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                   Health Center Facility
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-800 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
                   Construction of a comprehensive health center to provide
                   accessible medical care and wellness services to the
                   community.
