@@ -50,7 +50,7 @@ export default function Ministries() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
                   <CloudinaryImage
-                    src="FB_IMG_1770043335394_hily57"
+                    src="IMG-20260216-WA0038_q8v2ww"
                     alt="Church Ministry"
                     width={800}
                     height={600}
@@ -443,7 +443,7 @@ export default function Ministries() {
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 ring-2 ring-secondary-200">
                         <CloudinaryImage
-                          src="FB_IMG_1770033884001_rjyc20"
+                          src="IMG-20260216-WA0007_bsgsel"
                           alt="Branch Pastor"
                           width={64}
                           height={64}
@@ -452,7 +452,7 @@ export default function Ministries() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-gray-900">
-                          Pastor [Name]
+                          Pastor Andrew Ouma
                         </h4>
                         <p className="text-secondary-600 font-semibold text-sm">
                           Branch Pastor
@@ -478,7 +478,7 @@ export default function Ministries() {
                 </div>
                 <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
                   <CloudinaryImage
-                    src="FB_IMG_1770043270970_egq4lf"
+                    src="IMG-20260216-WA0035_xf6rfo"
                     alt="Arapai Branch"
                     width={800}
                     height={600}

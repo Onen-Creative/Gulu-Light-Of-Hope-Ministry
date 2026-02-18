@@ -150,7 +150,7 @@ export default function Home() {
                     Founding Director
                   </p>
                   <p className="text-gray-600 mt-1">
-                    Gulu Light of Hope Bible Church & Outreach Ministries
+                    Gulu Light of Hope Bible Church & Outreach Ministries-Uganda
                   </p>
                 </div>
               </div>
