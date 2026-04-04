@@ -217,7 +217,11 @@ export default function Media() {
   });
 
   const openModal = (item: any) => {
-    setSelectedMedia(item);
+    if (item.type === 'video') {
+      setSelectedMedia(selectedMedia?.id === item.id ? null : item);
+    } else {
+      setSelectedMedia(item);
+    }
   };
 
   const closeModal = () => {
@@ -227,24 +231,52 @@ export default function Media() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center bg-gradient-to-br from-primary-600 to-primary-800 pt-16">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800">
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/40 via-transparent to-black/60"></div>
+        </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-              Media Gallery
+            {/* Animated Badge */}
+            <div className="mb-8 animate-fade-in-down">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full text-sm sm:text-base font-semibold uppercase tracking-wider shadow-2xl">
+                <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></span>
+                Moments of Faith
+              </span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <span className="block drop-shadow-2xl">
+                Media Gallery
+              </span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-4 sm:mb-6">
-              Explore photos and videos from our ministry activities, worship
-              services, community outreach programs, and special events.
-            </p>
-            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-3 sm:p-4 md:p-6 rounded-lg max-w-3xl mx-auto">
-              <p className="text-sm sm:text-base md:text-lg italic mb-2">
-                "Let everything that has breath praise the LORD."
+            
+            {/* Subtitle with Animation */}
+            <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed font-light drop-shadow-xl">
+                Explore photos and videos from our{" "}
+                <span className="text-purple-300 font-semibold">ministry activities</span>,{" "}
+                <span className="text-blue-300 font-semibold">worship services</span>,{" "}
+                <span className="text-green-300 font-semibold">community outreach programs</span>, and special events.
               </p>
-              <p className="text-gray-200 font-semibold text-xs sm:text-sm md:text-base">
-                Psalm 150:6 (NKJV)
-              </p>
+            </div>
+
+            {/* Bible Verse */}
+            <div className="max-w-3xl mx-auto animate-fade-in animation-delay-400">
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 p-6 sm:p-8 rounded-2xl shadow-2xl">
+                <p className="text-lg sm:text-xl md:text-2xl italic mb-3 font-serif drop-shadow-lg">
+                  "Let everything that has breath praise the LORD."
+                </p>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="h-px w-12 bg-white/40"></div>
+                  <p className="text-white/90 font-semibold text-sm sm:text-base tracking-wide">
+                    Psalm 150:6 (NKJV)
+                  </p>
+                  <div className="h-px w-12 bg-white/40"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -301,14 +333,31 @@ export default function Media() {
                 >
                   <div className="relative">
                     {item.type === "video" ? (
-                      <img
-                        src={`https://img.youtube.com/vi/${item.youtubeId}/maxresdefault.jpg`}
-                        alt={item.title}
-                        className="w-full h-48 object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src = `https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`;
-                        }}
-                      />
+                      <>
+                        <img
+                          src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
+                          alt={item.title}
+                          className="w-full h-48 object-cover bg-gray-200"
+                          onError={(e) => {
+                            e.currentTarget.src = `https://img.youtube.com/vi/${item.youtubeId}/mqdefault.jpg`;
+                          }}
+                        />
+                        {/* Inline video modal rendered on top of this card */}
+                        {selectedMedia?.id === item.id && (
+                          <div
+                            className="absolute inset-0 bg-black z-10"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <button
+                              onClick={(e) => { e.stopPropagation(); closeModal(); }}
+                              className="absolute top-2 right-2 z-20 bg-black/70 text-white rounded-full p-1 hover:bg-black transition-colors"
+                            >
+                              <X className="h-5 w-5" />
+                            </button>
+                            <YouTubeEmbed videoId={item.youtubeId!} title={item.title} />
+                          </div>
+                        )}
+                      </>
                     ) : (
                       <CloudinaryImage
                         src={item.thumbnail || ""}
@@ -374,54 +423,32 @@ export default function Media() {
               </div>
             )}
 
-            {/* Modal */}
-            {selectedMedia && (
+            {/* Modal - photos only */}
+            {selectedMedia && selectedMedia.type === "photo" && (
               <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
                 <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
                   <div className="flex justify-between items-center p-4 border-b">
                     <h3 className="text-xl font-semibold text-gray-900">
                       {selectedMedia.title}
                     </h3>
-                    <button
-                      onClick={closeModal}
-                      className="text-gray-400 hover:text-gray-600"
-                    >
+                    <button onClick={closeModal} className="text-gray-400 hover:text-gray-600">
                       <X className="h-6 w-6" />
                     </button>
                   </div>
-
                   <div className="p-4">
-                    {selectedMedia.type === "photo" ? (
-                      <CloudinaryImage
-                        src={selectedMedia.fullImage}
-                        alt={selectedMedia.title}
-                        width={1200}
-                        height={800}
-                        className="w-full h-auto rounded-lg"
-                      />
-                    ) : (
-                      <YouTubeEmbed
-                        videoId={selectedMedia.youtubeId}
-                        title={selectedMedia.title}
-                      />
-                    )}
-
+                    <CloudinaryImage
+                      src={selectedMedia.fullImage}
+                      alt={selectedMedia.title}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-lg"
+                    />
                     <div className="mt-4">
-                      <p className="text-gray-700 mb-4">
-                        {selectedMedia.description}
-                      </p>
-
+                      <p className="text-gray-700 mb-4">{selectedMedia.description}</p>
                       <div className="flex items-center text-sm text-gray-500 space-x-6">
                         <div className="flex items-center">
                           <Calendar className="h-4 w-4 mr-2" />
-                          {new Date(selectedMedia.date).toLocaleDateString(
-                            "en-US",
-                            {
-                              year: "numeric",
-                              month: "long",
-                              day: "numeric",
-                            },
-                          )}
+                          {new Date(selectedMedia.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                         </div>
                         <div className="flex items-center">
                           <MapPin className="h-4 w-4 mr-2" />

@@ -7,28 +7,56 @@ export default function Join() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[450px] sm:h-[550px] lg:h-[650px] flex items-center pt-16">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770042328626_yszo5s"
             alt="Join Us"
             width={1920}
-            height={650}
-            className="w-full h-full object-cover brightness-50"
+            height={700}
+            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
             priority={true}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/60 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 drop-shadow-lg leading-tight">
-              Join Our Church Family
+            {/* Animated Badge */}
+            <div className="mb-8 animate-fade-in-down">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full text-sm sm:text-base font-semibold uppercase tracking-wider shadow-2xl">
+                <span className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></span>
+                You Belong Here
+              </span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <span className="block drop-shadow-2xl">
+                Join Our Church Family
+              </span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-8">
-              We welcome everyone to be part of Gulu Light of Hope Bible Church & Outreach Ministries.
-            </p>
-            <p className="text-lg sm:text-xl md:text-2xl font-semibold drop-shadow-lg">
-              Whether you are seeking spiritual growth, fellowship, or opportunities to serve, there is a place for you in our church family.
-            </p>
+            
+            {/* Subtitle with Animation */}
+            <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed font-light drop-shadow-xl mb-4">
+                We welcome everyone to be part of Gulu Light of Hope Bible Church & Outreach Ministries.
+              </p>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-light drop-shadow-xl">
+                Whether you are seeking{" "}
+                <span className="text-purple-300 font-semibold">spiritual growth</span>,{" "}
+                <span className="text-pink-300 font-semibold">fellowship</span>, or{" "}
+                <span className="text-blue-300 font-semibold">opportunities to serve</span>,{" "}
+                there is a place for you in our church family.
+              </p>
+            </div>
+
+            {/* Decorative Line */}
+            <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
+              <div className="h-px w-16 sm:w-24 bg-gradient-to-r from-transparent to-white/50"></div>
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <div className="h-px w-16 sm:w-24 bg-gradient-to-l from-transparent to-white/50"></div>
+            </div>
           </div>
         </div>
       </section>

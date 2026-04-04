@@ -7,24 +7,51 @@ export default function Partnership() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center pt-16">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="IMG-20260209-WA0006_yywtft"
             alt="Partnership"
             width={1920}
-            height={600}
-            className="w-full h-full object-cover brightness-50"
+            height={700}
+            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-900/60 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-teal-600/20"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-              Partnership & Affiliation
+            {/* Animated Badge */}
+            <div className="mb-6 sm:mb-8 animate-fade-in-down">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider shadow-2xl">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                Together in Mission
+              </span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <span className="block drop-shadow-2xl">
+                Partnership & Affiliation
+              </span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-              Working together to advance God's Kingdom
-            </p>
+            
+            {/* Subtitle with Animation */}
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-8 animate-fade-in-up animation-delay-200">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed font-light drop-shadow-xl">
+                Working together to advance{" "}
+                <span className="text-green-300 font-semibold">God's Kingdom</span> through{" "}
+                <span className="text-teal-300 font-semibold">collaboration</span> and{" "}
+                <span className="text-blue-300 font-semibold">shared vision</span>
+              </p>
+            </div>
+
+            {/* Decorative Line */}
+            <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
+              <div className="h-px w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent to-white/50"></div>
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <div className="h-px w-12 sm:w-16 md:w-24 bg-gradient-to-l from-transparent to-white/50"></div>
+            </div>
           </div>
         </div>
       </section>

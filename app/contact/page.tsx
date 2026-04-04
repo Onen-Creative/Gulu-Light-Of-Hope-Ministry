@@ -56,33 +56,58 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center pt-16">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770032975490_vicd6p"
             alt="Contact Us"
             width={1920}
-            height={500}
-            className="w-full h-full object-cover brightness-50"
+            height={700}
+            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
             priority={true}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/60 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-              Contact Us
+            {/* Animated Badge */}
+            <div className="mb-8 animate-fade-in-down">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full text-sm sm:text-base font-semibold uppercase tracking-wider shadow-2xl">
+                <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+                Get In Touch
+              </span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <span className="block drop-shadow-2xl">
+                Contact Us
+              </span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg mb-4 sm:mb-6">
-              We'd love to hear from you. Get in touch with Gulu Light of Hope
-              Bible Church & Outreach Ministries.
-            </p>
-            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-white p-3 sm:p-4 md:p-6 rounded-lg max-w-3xl mx-auto">
-              <p className="text-sm sm:text-base md:text-lg italic mb-2">
-                "Let all things be done decently and in order."
+            
+            {/* Subtitle with Animation */}
+            <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed font-light drop-shadow-xl">
+                We'd love to hear from you. Get in touch with{" "}
+                <span className="text-cyan-300 font-semibold">Gulu Light of Hope Bible Church & Outreach Ministries</span>.
               </p>
-              <p className="text-gray-200 font-semibold text-xs sm:text-sm md:text-base">
-                1 Corinthians 14:40 (NKJV)
-              </p>
+            </div>
+
+            {/* Bible Verse */}
+            <div className="max-w-3xl mx-auto animate-fade-in animation-delay-400">
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 p-6 sm:p-8 rounded-2xl shadow-2xl">
+                <p className="text-lg sm:text-xl md:text-2xl italic mb-3 font-serif drop-shadow-lg">
+                  "Let all things be done decently and in order."
+                </p>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="h-px w-12 bg-white/40"></div>
+                  <p className="text-white/90 font-semibold text-sm sm:text-base tracking-wide">
+                    1 Corinthians 14:40 (NKJV)
+                  </p>
+                  <div className="h-px w-12 bg-white/40"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

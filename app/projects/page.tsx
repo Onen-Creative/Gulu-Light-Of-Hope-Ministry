@@ -1,30 +1,65 @@
+import type { Metadata } from 'next';
 import { Church, GraduationCap, Sprout, Heart, TrendingUp } from "lucide-react";
 import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn } from "../../components/Animations";
+
+export const metadata: Metadata = {
+  title: 'Our Projects',
+  description: 'Explore GULOHBCOM projects including Beacon of Hope Junior School, church building, agriculture, and health center initiatives in Northern Uganda.',
+  openGraph: { title: 'Our Projects | GULOHBCOM', description: 'Holistic community development through faith and service in Northern Uganda.' },
+};
 
 export default function Projects() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[350px] sm:h-[450px] lg:h-[500px] flex items-center pt-16">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
         <div className="absolute inset-0">
           <CloudinaryImage
             src="FB_IMG_1770033186707_b4al7q"
             alt="Projects"
             width={1920}
-            height={500}
-            className="w-full h-full object-cover brightness-50"
+            height={700}
+            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
             priority={true}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-900/60 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-green-600/20"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight animate-fade-in">
-              Our Projects
+            {/* Animated Badge */}
+            <div className="mb-8 animate-fade-in-down">
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full text-sm sm:text-base font-semibold uppercase tracking-wider shadow-2xl">
+                <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
+                Making a Difference
+              </span>
+            </div>
+            
+            {/* Main Heading with Gradient */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
+              <span className="block drop-shadow-2xl">
+                Our Projects
+              </span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-              Holistic community development through faith and service
-            </p>
+            
+            {/* Subtitle with Animation */}
+            <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light drop-shadow-xl">
+                Holistic community development through
+              </p>
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light drop-shadow-xl mt-2">
+                <span className="text-orange-300 font-semibold">faith</span> and{" "}
+                <span className="text-green-300 font-semibold">service</span>
+              </p>
+            </div>
+
+            {/* Decorative Line */}
+            <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
+              <div className="h-px w-16 sm:w-24 bg-gradient-to-r from-transparent to-white/50"></div>
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <div className="h-px w-16 sm:w-24 bg-gradient-to-l from-transparent to-white/50"></div>
+            </div>
           </div>
         </div>
       </section>
