@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://gulohbcom.org';
+  const base = 'https://lightofhopeuganda.co.ug';
   const pages = ['', '/about', '/ministries', '/projects', '/media', '/partnership', '/join', '/contact'];
   return pages.map((path) => ({
     url: `${base}${path}`,

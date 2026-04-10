@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import CloudinaryImage from "../components/CloudinaryImage";
-import WhatsAppButton from "../components/WhatsAppButton";
 import {
   FadeIn,
   SlideInLeft,
@@ -112,26 +111,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 1 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto"
-            >
-              <Link
-                href="/about"
-                className="bg-white text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-50 hover:scale-105 transition-all shadow-lg inline-flex items-center justify-center text-sm sm:text-base md:text-lg"
-              >
-                Learn More <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Link>
-              <Link
-                href="/contact"
-                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 hover:scale-105 transition-all shadow-lg text-sm sm:text-base md:text-lg"
-              >
-                Contact Us
-              </Link>
-            </motion.div>
+
           </div>
         </div>
       </section>
@@ -275,14 +255,14 @@ export default function Home() {
             <p className="text-xl sm:text-2xl font-semibold mb-8">
               Together, we shine God's light and bring hope to our community.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
               >
                 <Link
                   href="/about"
-                  className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center justify-center text-lg"
+                  className="bg-white text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center justify-center text-base sm:text-lg w-full sm:w-auto"
                 >
                   Learn More About Us <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -293,7 +273,7 @@ export default function Home() {
               >
                 <Link
                   href="/contact"
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all shadow-lg text-lg"
+                  className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all shadow-lg inline-flex items-center justify-center text-base sm:text-lg w-full sm:w-auto"
                 >
                   Contact Us
                 </Link>
@@ -302,8 +282,6 @@ export default function Home() {
           </div>
         </section>
       </FadeIn>
-
-      <WhatsAppButton />
     </div>
   );
 }

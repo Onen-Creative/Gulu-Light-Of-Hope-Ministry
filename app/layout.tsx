@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gulohbcom.org'),
+  metadataBase: new URL('https://lightofhopeuganda.co.ug'),
   title: {
     default: 'Gulu Light of Hope Bible Church & Outreach Ministries',
     template: '%s | GULOHBCOM',
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_UG',
-    url: 'https://gulohbcom.org',
+    url: 'https://lightofhopeuganda.co.ug',
     siteName: 'Gulu Light of Hope Bible Church & Outreach Ministries',
     title: 'Gulu Light of Hope Bible Church & Outreach Ministries',
     description:
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
   },
   alternates: {
-    canonical: 'https://gulohbcom.org',
+    canonical: 'https://lightofhopeuganda.co.ug',
   },
 };
 
@@ -88,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@type': 'Church',
               name: 'Gulu Light of Hope Bible Church & Outreach Ministries',
               alternateName: 'GULOHBCOM',
-              url: 'https://gulohbcom.org',
+              url: 'https://lightofhopeuganda.co.ug',
               description:
                 'A Christ-centered ministry in Northern Uganda committed to worship, discipleship, education, and holistic community development.',
               address: {
@@ -111,6 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
