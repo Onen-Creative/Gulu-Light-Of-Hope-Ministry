@@ -14,11 +14,11 @@ export default function Join() {
             alt="Join Us"
             width={1920}
             height={700}
-            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
+            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
             priority={true}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/60 via-black/40 to-black/70"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-black/10 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-pink-600/5"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">

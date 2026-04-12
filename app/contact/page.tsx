@@ -14,7 +14,8 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitMessage("");
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data = {
       firstName: formData.get("firstName"),
       lastName: formData.get("lastName"),
@@ -25,23 +26,20 @@ export default function Contact() {
     };
 
     try {
-      console.log("Submitting form data:", data);
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
 
-      console.log("Response status:", response.status);
       const result = await response.json();
-      console.log("Response data:", result);
 
-      if (response.ok && result.success) {
+      if (response.ok && result.success === true) {
         setSubmitMessage("Thank you! Your message has been sent successfully.");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         setSubmitMessage(
-          "Sorry, there was an error sending your message. Please try again.",
+          result.error || "Sorry, there was an error sending your message. Please try again.",
         );
       }
     } catch (error) {
@@ -63,11 +61,11 @@ export default function Contact() {
             alt="Contact Us"
             width={1920}
             height={700}
-            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
+            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
             priority={true}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/60 via-black/40 to-black/70"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-black/10 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-cyan-600/5"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">

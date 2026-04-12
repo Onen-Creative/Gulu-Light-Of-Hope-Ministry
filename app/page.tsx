@@ -31,11 +31,11 @@ export default function Home() {
             alt="Church Community"
             width={1920}
             height={850}
-            className="w-full h-full object-cover brightness-[0.3] scale-110 animate-slow-zoom"
+            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
             priority={true}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-900/60 via-black/40 to-black/70"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-secondary-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-900/20 via-black/10 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-600/5 to-secondary-600/5"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-7xl mx-auto text-center">
@@ -57,7 +57,8 @@ export default function Home() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-5 sm:mb-6 leading-tight drop-shadow-2xl"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-5 sm:mb-6 leading-tight"
+              style={{ textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.6)' }}
             >
               Gulu Light of Hope
               <br />
@@ -71,7 +72,8 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-5 font-light drop-shadow-xl"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-5 font-light"
+              style={{ textShadow: '0 3px 8px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.5)' }}
             >
               A Beacon of Hope and Spiritual Nourishment
             </motion.p>
@@ -81,7 +83,8 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-base sm:text-lg md:text-xl mb-5 sm:mb-6 text-gray-200 drop-shadow-lg font-light"
+              className="text-base sm:text-lg md:text-xl mb-5 sm:mb-6 text-gray-100 font-light"
+              style={{ textShadow: '0 2px 6px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.5)' }}
             >
               <span className="text-primary-300 font-semibold">Faith</span> •{" "}
               <span className="text-secondary-300 font-semibold">Passion</span>{" "}

@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -10,16 +8,31 @@ export async function POST(request: NextRequest) {
 
     if (!firstName || !lastName || !email || !subject || !message) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missing required fields', success: false },
         { status: 400 }
       )
     }
 
+    // Check if Resend API key is configured
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not configured')
+      return NextResponse.json(
+        { 
+          error: 'Email service not configured. Please restart the server or contact us directly at gulohbcom@gmail.com',
+          success: false 
+        },
+        { status: 503 }
+      )
+    }
+
+    const resend = new Resend(apiKey)
+
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'GULOHBCOM Website <onboarding@resend.dev>', // Will use Resend's domain initially
-      to: 'gulohbcom@gmail.com', // Organization email
-      replyTo: email, // Visitor's email for easy reply
+      from: 'GULOHBCOM Website <onboarding@resend.dev>',
+      to: 'onendavid23@gmail.com',
+      replyTo: email,
       subject: `Website Contact: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -52,7 +65,10 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('Resend error:', error)
       return NextResponse.json(
-        { error: 'Failed to send message' },
+        { 
+          error: 'Failed to send message. Please try again or contact us directly at gulohbcom@gmail.com',
+          success: false 
+        },
         { status: 500 }
       )
     }
@@ -66,7 +82,10 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Email sending error:', error)
     return NextResponse.json(
-      { error: 'Failed to send message' },
+      { 
+        error: 'Failed to send message. Please contact us directly at gulohbcom@gmail.com',
+        success: false 
+      },
       { status: 500 }
     )
   }
