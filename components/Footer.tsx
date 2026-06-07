@@ -51,14 +51,14 @@ export default function Footer() {
               <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1ASkpkWRDo/"
                   className="bg-white/10 hover:bg-primary-600 p-3 rounded-full transition-all hover:scale-110"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/GuluLightofHope"
                   className="bg-white/10 hover:bg-gray-700 p-3 rounded-full transition-all hover:scale-110"
                   aria-label="Twitter/X"
                 >

@@ -1,12 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 import { Church, GraduationCap, Sprout, Heart, TrendingUp } from "lucide-react";
 import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn } from "../../components/Animations";
 
 export const metadata: Metadata = {
-  title: 'Our Projects',
-  description: 'Explore GULOHBCOM projects including Beacon of Hope Junior School, church building, agriculture, and health center initiatives in Northern Uganda.',
-  openGraph: { title: 'Our Projects | GULOHBCOM', description: 'Holistic community development through faith and service in Northern Uganda.' },
+  title: "Our Projects",
+  description:
+    "Explore GULOHBCOM projects including Beacon of Hope Junior School, church building, agriculture, and health center initiatives in Northern Uganda.",
+  openGraph: {
+    title: "Our Projects | GULOHBCOM",
+    description:
+      "Holistic community development through faith and service in Northern Uganda.",
+  },
 };
 
 export default function Projects() {
@@ -35,14 +40,12 @@ export default function Projects() {
                 Making a Difference
               </span>
             </div>
-            
+
             {/* Main Heading with Gradient */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
-              <span className="block drop-shadow-2xl">
-                Our Projects
-              </span>
+              <span className="block drop-shadow-2xl">Our Projects</span>
             </h1>
-            
+
             {/* Subtitle with Animation */}
             <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light drop-shadow-xl">
@@ -304,16 +307,17 @@ export default function Projects() {
                         As Administrative Director of Beacon of Hope Junior
                         School, I am honored to serve in a ministry that
                         transforms lives through Christ-centered education. Our
-                        school stands as a testament to God's faithfulness and His
-                        heart for the children of Northern Uganda.
+                        school stands as a testament to God's faithfulness and
+                        His heart for the children of Northern Uganda.
                       </p>
                       <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
                         In alignment with our ministry's constitution, we are
                         committed to providing holistic education that nurtures
-                        the spiritual, academic, physical, and social development
-                        of every child. We believe that true education goes beyond
-                        textbooks—it shapes character, builds faith, and prepares
-                        young hearts to serve God and their communities.
+                        the spiritual, academic, physical, and social
+                        development of every child. We believe that true
+                        education goes beyond textbooks—it shapes character,
+                        builds faith, and prepares young hearts to serve God and
+                        their communities.
                       </p>
                       <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
                         Our administrative team works diligently to ensure that
@@ -334,8 +338,8 @@ export default function Projects() {
                         love through practical service.
                       </p>
                       <p className="text-sm sm:text-base text-gray-800 leading-relaxed font-semibold">
-                        May God continue to bless this ministry and use it for His
-                        glory.
+                        May God continue to bless this ministry and use it for
+                        His glory.
                       </p>
                     </div>
                   </div>
@@ -431,13 +435,15 @@ export default function Projects() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-600 mr-2 sm:mr-3">•</span>
-                      <span>Food security and income-generating activities</span>
+                      <span>
+                        Food security and income-generating activities
+                      </span>
                     </li>
                   </ul>
                 </div>
                 <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
                   <CloudinaryImage
-                    src="FB_IMG_1770032946503_mggvt8"
+                    src="IMG-20260606-WA0003_wosaei"
                     alt="Agriculture"
                     width={800}
                     height={600}

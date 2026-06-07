@@ -207,6 +207,34 @@ export default function Media() {
       thumbnail: "IMG-20260216-WA0030_th6qzm",
       fullImage: "IMG-20260216-WA0030_th6qzm",
     },
+    {
+      id: 20,
+      type: "video",
+      title: "Testimony About God's Work and Blessings",
+      description: "Rice garden for the first season of 2026",
+      date: "2026-06-06",
+      location: "Seven corner, Lwalakwar Village",
+      youtubeId: "oHFgaH6I5x4",
+    },
+    {
+      id: 21,
+      type: "photo",
+      title: "Rice Garden",
+      description: "The ministry's rice garden for the first season of 2026",
+      date: "2026-06-06",
+      location: "Seven corner, Lwalakwar Village",
+      thumbnail: "IMG-20260606-WA0003_wosaei",
+      fullImage: "IMG-20260606-WA0003_wosaei",
+    },
+    {
+      id: 22,
+      type: "video",
+      title: "Our New Piece of Land",
+      description: "Clearing the new piece of land for farming",
+      date: "2026-006-06",
+      location: "Pawe Langeta, Opok Village",
+      youtubeId: "QRNkcpq9d44",
+    },
   ];
 
   const filteredMedia = mediaItems.filter((item) => {
@@ -217,7 +245,7 @@ export default function Media() {
   });
 
   const openModal = (item: any) => {
-    if (item.type === 'video') {
+    if (item.type === "video") {
       setSelectedMedia(selectedMedia?.id === item.id ? null : item);
     } else {
       setSelectedMedia(item);
@@ -245,21 +273,28 @@ export default function Media() {
                 Moments of Faith
               </span>
             </div>
-            
+
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 sm:mb-8 leading-tight animate-fade-in-up">
-              <span className="block drop-shadow-2xl">
-                Media Gallery
-              </span>
+              <span className="block drop-shadow-2xl">Media Gallery</span>
             </h1>
-            
+
             {/* Subtitle with Animation */}
             <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up animation-delay-200">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed font-light drop-shadow-xl">
                 Explore photos and videos from our{" "}
-                <span className="text-purple-300 font-semibold">ministry activities</span>,{" "}
-                <span className="text-blue-300 font-semibold">worship services</span>,{" "}
-                <span className="text-green-300 font-semibold">community outreach programs</span>, and special events.
+                <span className="text-purple-300 font-semibold">
+                  ministry activities
+                </span>
+                ,{" "}
+                <span className="text-blue-300 font-semibold">
+                  worship services
+                </span>
+                ,{" "}
+                <span className="text-green-300 font-semibold">
+                  community outreach programs
+                </span>
+                , and special events.
               </p>
             </div>
 
@@ -349,12 +384,18 @@ export default function Media() {
                             onClick={(e) => e.stopPropagation()}
                           >
                             <button
-                              onClick={(e) => { e.stopPropagation(); closeModal(); }}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                closeModal();
+                              }}
                               className="absolute top-2 right-2 z-20 bg-black/70 text-white rounded-full p-1 hover:bg-black transition-colors"
                             >
                               <X className="h-5 w-5" />
                             </button>
-                            <YouTubeEmbed videoId={item.youtubeId!} title={item.title} />
+                            <YouTubeEmbed
+                              videoId={item.youtubeId!}
+                              title={item.title}
+                            />
                           </div>
                         )}
                       </>
@@ -431,7 +472,10 @@ export default function Media() {
                     <h3 className="text-xl font-semibold text-gray-900">
                       {selectedMedia.title}
                     </h3>
-                    <button onClick={closeModal} className="text-gray-400 hover:text-gray-600">
+                    <button
+                      onClick={closeModal}
+                      className="text-gray-400 hover:text-gray-600"
+                    >
                       <X className="h-6 w-6" />
                     </button>
                   </div>
@@ -444,11 +488,16 @@ export default function Media() {
                       className="w-full h-auto rounded-lg"
                     />
                     <div className="mt-4">
-                      <p className="text-gray-700 mb-4">{selectedMedia.description}</p>
+                      <p className="text-gray-700 mb-4">
+                        {selectedMedia.description}
+                      </p>
                       <div className="flex items-center text-sm text-gray-500 space-x-6">
                         <div className="flex items-center">
                           <Calendar className="h-4 w-4 mr-2" />
-                          {new Date(selectedMedia.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                          {new Date(selectedMedia.date).toLocaleDateString(
+                            "en-US",
+                            { year: "numeric", month: "long", day: "numeric" },
+                          )}
                         </div>
                         <div className="flex items-center">
                           <MapPin className="h-4 w-4 mr-2" />
