@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn } from "../../components/Animations";
 
 export default function Contact() {
@@ -55,14 +54,11 @@ export default function Contact() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="FB_IMG_1770032975490_vicd6p"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/FB_IMG_1770032975490_vicd6p"
             alt="Contact Us"
-            width={1920}
-            height={700}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-cyan-600/5"></div>

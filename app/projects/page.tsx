@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Church, GraduationCap, Sprout, Heart, TrendingUp } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
-import { FadeIn } from "../../components/Animations";
 
 export const metadata: Metadata = {
   title: "Our Projects",
@@ -18,15 +16,12 @@ export default function Projects() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="FB_IMG_1770033186707_b4al7q"
+      <section className="block relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/FB_IMG_1770033186707_b4al7q"
             alt="Projects"
-            width={1920}
-            height={700}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-orange-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-600/5 to-green-600/5"></div>
@@ -68,8 +63,7 @@ export default function Projects() {
       </section>
 
       {/* Community Outreach Introduction */}
-      <FadeIn>
-        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-purple-50 to-white">
+      <section className="block py-12 sm:py-16 md:py-20 bg-gradient-to-br from-purple-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -145,26 +139,22 @@ export default function Projects() {
               </p>
             </div>
           </div>
-        </section>
-      </FadeIn>
+      </section>
 
       {/* Projects */}
-      <FadeIn delay={100}>
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white">
+        <section className="block py-8 sm:py-12 md:py-16 lg:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8 sm:mb-12 md:mb-16">
               Our Projects
             </h2>
-            <div className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
+            <div className="space-y-6 sm:space-y-8 md:space-y-12 lg:space-y-16">
               {/* Church Building Project */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
-                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG_20260107_170618_426_xk3yrg"
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden bg-gray-200 shadow-2xl hover:scale-105 transition-transform">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG_20260107_170618_426_xk3yrg"
                     alt="Church Building"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -218,15 +208,13 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
-                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
-                      <CloudinaryImage
-                        src="FB_IMG_1770033186707_b4al7q"
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+                  <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform w-full">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden bg-gray-200">
+                      <img
+                        src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/FB_IMG_1770033186707_b4al7q"
                         alt="Beacon of Hope Junior School"
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                       />
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -238,14 +226,12 @@ export default function Projects() {
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
-                      <CloudinaryImage
-                        src="FB_IMG_1770033173611_yif6k7"
+                  <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform w-full">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden bg-gray-200">
+                      <img
+                        src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/FB_IMG_1770033173611_yif6k7"
                         alt="Scholarship Program"
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                       />
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -257,14 +243,12 @@ export default function Projects() {
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform">
-                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
-                      <CloudinaryImage
-                        src="FB_IMG_1770410350073_ulis3l"
+                  <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform w-full">
+                    <div className="relative h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden bg-gray-200">
+                      <img
+                        src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/FB_IMG_1770410350073_ulis3l"
                         alt="Adult Literacy"
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                       />
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -277,17 +261,15 @@ export default function Projects() {
                 </div>
 
                 {/* Messages from Leadership */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
+                <div className="grid grid-cols-1 gap-6 sm:gap-8 mt-6 sm:mt-8">
                   {/* Administrative Director */}
-                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg w-full">
                     <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4 sm:mb-6">
                       <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-4 sm:mb-0 sm:mr-6 ring-4 ring-secondary-200 flex-shrink-0">
-                        <CloudinaryImage
-                          src="IMG-20260209-WA0024_ezrszx"
+                        <img
+                          src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260209-WA0024_ezrszx"
                           alt="Administrative Director"
-                          width={96}
-                          height={96}
-                          className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                         />
                       </div>
                       <div className="text-center sm:text-left">
@@ -345,15 +327,13 @@ export default function Projects() {
                   </div>
 
                   {/* Head Teacher */}
-                  <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg w-full">
                     <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4 sm:mb-6">
                       <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-4 sm:mb-0 sm:mr-6 ring-4 ring-secondary-200 flex-shrink-0">
-                        <CloudinaryImage
-                          src="IMG-20260210-WA0023_kmlhmq"
+                        <img
+                          src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260210-WA0023_kmlhmq"
                           alt="M/s. Margaret Oyella"
-                          width={96}
-                          height={96}
-                          className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                         />
                       </div>
                       <div className="text-center sm:text-left">
@@ -441,26 +421,22 @@ export default function Projects() {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG-20260606-WA0003_wosaei"
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden bg-gray-200 shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260606-WA0003_wosaei"
                     alt="Agriculture"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </div>
 
               {/* Health Center Project */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
-                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="FB_IMG_1770042328626_yszo5s"
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden bg-gray-200 shadow-2xl hover:scale-105 transition-transform">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/FB_IMG_1770042328626_yszo5s"
                     alt="Health Center"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -491,11 +467,9 @@ export default function Projects() {
             </div>
           </div>
         </section>
-      </FadeIn>
 
       {/* Future Projects */}
-      <FadeIn delay={200}>
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <section className="block py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
               <div className="flex flex-col sm:flex-row items-center justify-center mb-3 sm:mb-4 md:mb-6">
@@ -551,8 +525,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </section>
-      </FadeIn>
+      </section>
     </div>
   );
 }

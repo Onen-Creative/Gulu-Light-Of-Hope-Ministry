@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowRight, Facebook, Send } from "lucide-react";
-import CloudinaryImage from "./CloudinaryImage";
 
 export default function Footer() {
   return (
@@ -17,12 +16,12 @@ export default function Footer() {
           {/* Ministry Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <CloudinaryImage
-                src="logo_gulu_light_of_hope_a4mdo4"
+              <img
+                src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_96,h_96,c_fit/logo_gulu_light_of_hope_a4mdo4.png"
                 alt="GULOHBCOM Logo"
-                width={48}
-                height={48}
-                className="object-contain"
+                width="48"
+                height="48"
+                className="w-12 h-12 object-contain flex-shrink-0"
               />
               <div>
                 <h3 className="text-2xl font-bold">GULOHBCOM</h3>

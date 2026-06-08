@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Target, Eye, Heart, Award, Users, BookOpen } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn, SlideInLeft, SlideInRight, StaggerContainer, StaggerItem } from "../../components/Animations";
 
 export const metadata: Metadata = {
@@ -32,14 +31,11 @@ export default function About() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="IMG-20260209-WA0008_ghwmf3"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/IMG-20260209-WA0008_ghwmf3"
             alt="About Us"
-            width={1920}
-            height={700}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-600/5 to-secondary-600/5"></div>
@@ -87,13 +83,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <SlideInLeft>
-              <div className="relative h-[400px] sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <CloudinaryImage
-                  src="IMG_20260107_132926_334_ysnf9h"
+              <div className="relative h-[400px] sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gray-200">
+                <img
+                  src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG_20260107_132926_334_ysnf9h"
                   alt="Ministry Community"
-                  width={800}
-                  height={600}
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </SlideInLeft>

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import CloudinaryImage from "../components/CloudinaryImage";
 import {
   FadeIn,
   SlideInLeft,
@@ -25,14 +24,11 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[650px] sm:h-[750px] lg:h-[850px] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="IMG_20260107_132915_073_ocuiy9"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/IMG_20260107_132915_073_ocuiy9"
             alt="Church Community"
-            width={1920}
-            height={850}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-600/5 to-secondary-600/5"></div>
@@ -179,12 +175,10 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mb-6 sm:mb-0 sm:mr-8 ring-4 ring-primary-200 flex-shrink-0"
                 >
-                  <CloudinaryImage
-                    src="IMG-20260209-WA0023_qy58ex"
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_256,h_256,c_fill,g_face,q_auto/IMG-20260209-WA0023_qy58ex"
                     alt="Pastor James Ekanya"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </motion.div>
                 <div className="text-center sm:text-left">

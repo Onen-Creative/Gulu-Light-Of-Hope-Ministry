@@ -1,6 +1,4 @@
 import { Heart, Users, Lightbulb, ArrowRight } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
-import { FadeIn } from "../../components/Animations";
 import Link from "next/link";
 
 export default function Join() {
@@ -8,14 +6,11 @@ export default function Join() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="FB_IMG_1770042328626_yszo5s"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/FB_IMG_1770042328626_yszo5s"
             alt="Join Us"
-            width={1920}
-            height={700}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-pink-600/5"></div>
@@ -62,8 +57,7 @@ export default function Join() {
       </section>
 
       {/* Main Content */}
-      <FadeIn>
-        <section className="py-20 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -128,7 +122,6 @@ export default function Join() {
           </div>
         </div>
       </section>
-      </FadeIn>
     </div>
   );
 }

@@ -7,7 +7,6 @@ import {
   Clock,
   MapPin,
 } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn } from "../../components/Animations";
 
 export default function Ministries() {
@@ -15,14 +14,11 @@ export default function Ministries() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="IMG-20260209-WA0049_byz4dm"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1920,h_1080,c_fill,g_auto,q_auto/IMG-20260209-WA0049_byz4dm"
             alt="Ministries"
-            width={1920}
-            height={700}
-            className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
-            priority={true}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/20 via-black/10 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-600/5 to-purple-600/5"></div>
@@ -74,13 +70,11 @@ export default function Ministries() {
             <div className="space-y-16">
               {/* Church Ministry */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG-20260216-WA0038_q8v2ww"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260216-WA0038_q8v2ww"
                     alt="Church Ministry"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -117,26 +111,22 @@ export default function Ministries() {
                     young people.
                   </p>
                 </div>
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG_20260107_135406_623_ytsdbg"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG_20260107_135406_623_ytsdbg"
                     alt="Youth Ministry"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </div>
 
               {/* Missions & Church Planting */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="FB_IMG_1770033273318_mojjty"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/FB_IMG_1770033273318_mojjty"
                     alt="Missions"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -172,26 +162,22 @@ export default function Ministries() {
                     leadership training, and fellowship.
                   </p>
                 </div>
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG-20260209-WA0006_yywtft"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260209-WA0006_yywtft"
                     alt="Conference"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </div>
 
               {/* Pastoral & Leadership Training */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG-20260209-WA0049_byz4dm"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260209-WA0049_byz4dm"
                     alt="Training"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -375,13 +361,11 @@ export default function Ministries() {
             <div className="space-y-16">
               {/* Pawel Branch */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG_20260107_132926_334_ysnf9h"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG_20260107_132926_334_ysnf9h"
                     alt="Pawel Branch"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -408,13 +392,11 @@ export default function Ministries() {
                   {/* Pastor Message */}
                   <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-lg">
                     <div className="flex items-center mb-4">
-                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 ring-2 ring-primary-200">
-                        <CloudinaryImage
-                          src="IMG-20260210-WA0001_vobr9f"
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 ring-2 ring-primary-200 bg-gray-200">
+                        <img
+                          src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_128,h_128,c_fill,g_face,q_auto/IMG-20260210-WA0001_vobr9f"
                           alt="Pastor Moses Okot & his wife Mrs. Paska Okot"
-                          width={64}
-                          height={64}
-                          className="w-full h-full object-cover"
+                          className="absolute inset-0 w-full h-full object-cover"
                         />
                       </div>
                       <div>
@@ -467,13 +449,11 @@ export default function Ministries() {
                   {/* Pastor Message */}
                   <div className="bg-secondary-50 border-l-4 border-secondary-600 p-6 rounded-lg">
                     <div className="flex items-center mb-4">
-                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 ring-2 ring-secondary-200">
-                        <CloudinaryImage
-                          src="IMG-20260216-WA0007_bsgsel"
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 ring-2 ring-secondary-200 bg-gray-200">
+                        <img
+                          src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_128,h_128,c_fill,g_face,q_auto/IMG-20260216-WA0007_bsgsel"
                           alt="Branch Pastor"
-                          width={64}
-                          height={64}
-                          className="w-full h-full object-cover"
+                          className="absolute inset-0 w-full h-full object-cover"
                         />
                       </div>
                       <div>
@@ -502,13 +482,11 @@ export default function Ministries() {
                     </p>
                   </div>
                 </div>
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform">
-                  <CloudinaryImage
-                    src="IMG-20260216-WA0035_xf6rfo"
+                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 hover:scale-105 transition-transform bg-gray-200">
+                  <img
+                    src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260216-WA0035_xf6rfo"
                     alt="Arapai Branch"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </div>

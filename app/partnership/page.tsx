@@ -1,5 +1,4 @@
 import { Globe, Heart, Users } from "lucide-react";
-import CloudinaryImage from "../../components/CloudinaryImage";
 import { FadeIn } from "../../components/Animations";
 import Link from "next/link";
 
@@ -8,12 +7,12 @@ export default function Partnership() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudinaryImage
-            src="IMG-20260209-WA0003_qosdxt"
+        <div className="absolute inset-0 bg-black">
+          <img
+            src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260209-WA0003_qosdxt"
             alt="Partnership"
-            width={1920}
-            height={700}
+           
+           
             className="w-full h-full object-cover brightness-[0.75] scale-110 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-green-900/20 via-black/10 to-black/30"></div>
@@ -61,13 +60,13 @@ export default function Partnership() {
         <section className="py-12 sm:py-16 md:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
-              <div className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform">
-                <CloudinaryImage
-                  src="IMG-20260209-WA0003_qosdxt"
+              <div className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-xl sm:rounded-2xl overflow-hidden bg-gray-200 shadow-2xl hover:scale-105 transition-transform">
+                <img
+                  src="https://res.cloudinary.com/dhzo74l5w/image/upload/w_1000,h_750,c_fill,g_auto,q_auto/IMG-20260209-WA0003_qosdxt"
                   alt="Affiliation"
-                  width={800}
-                  height={600}
-                  className="w-full h-full object-cover"
+                 
+                 
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
               <div>

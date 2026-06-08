@@ -59,6 +59,21 @@ html {
   }
 }
 
+/* Force images to render on mobile */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure Cloudinary images display properly */
+.cld-image,
+[class*="cld-"] img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
